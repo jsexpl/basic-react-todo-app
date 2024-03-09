@@ -21,7 +21,7 @@ function App() {
     const name = todoFormRef.current.value;
     if (!name.trim().length) return;
     const newTodo = {
-      id: todoList.length + 1,
+      id: todoList[todoList.length - 1].id + 1,
       name,
       completed: false,
     };
